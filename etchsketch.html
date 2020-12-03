@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Etch-a-Sketch</title>
+</head>
+<style>
+     
+    .grid-container {
+        background-color: coral;
+        display: grid;
+        grid-template-columns: repeat(16, 2fr);
+        padding:10px;
+        margin: 100px 30px 700px 70px;
+        border: 3px solid black;
+        margin-top: 200px;
+        position: fixed;
+        width: 800px;
+        height: 500px;
+        top: 5px;
+        left: 300px;
+        right: 300px; 
+    } 
+
+    body{
+        background-image: url("gKaWriI.jpg"); ;
+    }
+
+    .grid-item {
+        background-color:beige;
+        padding: 10px; 
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:70px;
+        margin-bottom: 20px ;
+        margin-left: 430px;
+        margin-right: 250px;
+        position: fixed;
+
+    }
+
+    button {
+        display: inline-block; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 0px 70px 0px 20px;
+        cursor: pointer;
+        width: 150px;
+        height: 50px;
+        background-color:  orange;
+        border: 1px solid black; 
+    }
+
+    button:hover {
+        box-shadow: 0 10px 20px black;
+    }
+
+</style>
+<body>
+    <section class="container"> 
+        <div class="grid-container">
+        </div>
+        <div class="buttons">
+            <button class="reset">Clear</button>
+            <button class="blackpen">Black</button>
+            <button class="colorpen">Color</button>
+        </div>
+    </section>
+
+      
+<script src="etchfunctionality.js"> </script> 
+</body>
+
+</html>
